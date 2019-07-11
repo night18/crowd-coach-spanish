@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crowd Coach",
+  "description": "Enhance your work on Amazon Mechanical Turk",
+  "version": "0.1.4.4",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "icons": {"128" : "img/icon.png"},
+  "page_action": {
+    "default_icon": "img/icon.png",
+    "default_title": "Crowd Coach"
+  },
+  "content_scripts":[
+    {
+      "css": ["css/contentUI.css"],
+      "js": [
+        "lib/jquery-3.3.1.js",
+        "lib/chrome-extension-async.js",
+        "lib/sweetalert.min.js",
+        "js/content.js",
+        "js/contentUI.js"
+      ],
+      "matches": ["https://worker.mturk.com/projects/*/tasks*"]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/like.svg",
+    "img/dislike.svg",
+    "img/left_arrow.svg",
+    "img/right_arrow.svg",
+    "img/plus.svg"
+  ],
+  "permissions": [
+    "https://worker.mturk.com/*",
+    "https://aa4ccf4b.ngrok.io/*",
+    "activeTab",
+    "storage",
+    "tabs",
+    "declarativeContent"
+  ]
+}

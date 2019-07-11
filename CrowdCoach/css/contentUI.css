@@ -1,0 +1,137 @@
+.add_button{
+	/*position: fixed;*/
+	/*bottom: 1px;
+	right: 15px;
+	width: 120px;
+	height: 35px;*/
+	font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.395rem 0.714rem;
+    line-height: 1.5;
+    border-radius: 2px;
+	background-color: #519983;
+	color: #FFFFFF;
+    border: 1px solid #519983;
+	font-size: 0.857rem;
+	margin-right: 0.7142rem !important;
+    display: inline !important;
+}
+
+#hintProvider{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 200px;
+	height: 210px;
+	border: 1px solid #000000; 
+	background-color: #f9f9f9;
+	padding: 16px 4px 4px 4px; 
+	margin: 0 auto;
+}
+
+.hidden{
+	display: none !important;
+}
+
+.show{
+	display: block;
+}
+
+.label_text{
+	text-align: center;
+	font-size: 14px;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 2px; 
+}
+
+#sendButton{
+	display: block;
+	background-color: #519983;
+	color: #FFFFFF;
+	border-radius: 10px;
+	width: 80px;
+	height: 30px; 
+	margin: 5px auto;
+}
+
+#sendButton:active{
+	background-color: #076e4e;
+	color: #FFFFFF;
+	box-shadow: inset 0px 0px 3px grey;
+}
+
+#hintPvdContent{
+	display: block;
+	width: 180px;
+	height: 40%;
+	margin: 2px auto 5px auto;
+}
+
+#typeSelector{
+	display: block;
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	font-size: 13px;
+}
+
+#hintDisplayer{
+	line-height: normal;
+}
+
+.textContent{
+	display: inline-block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #000000;
+	font-size: 16px;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.feedbackButton{
+	width: 20px;
+	height: 20px;
+	margin: 2px 4px;
+}
+
+.gray{
+	-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.gray:hover{
+	-webkit-filter: grayscale(30%);
+    -moz-filter: grayscale(30%);
+    -ms-filter: grayscale(30%);
+    -o-filter: grayscale(30%);
+    filter: grayscale(30%);
+    /*filter: gray;*/
+}
+
+.gray:active{
+	-webkit-filter: grayscale(10%);
+    -moz-filter: grayscale(10%);
+    -ms-filter: grayscale(10%);
+    -o-filter: grayscale(10%);
+    filter: grayscale(10%);
+    /*filter: gray;*/
+}
+
+.hintSelectorButton{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: auto;
+	vertical-align: middle;
+	line-height: normal;
+}

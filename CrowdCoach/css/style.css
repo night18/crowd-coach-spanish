@@ -1,0 +1,113 @@
+/*-------------------------------------------
+				General Part
+-------------------------------------------*/
+html{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.popup_container{
+	width: 320px;
+	height: 450px;
+	background-color: #f7f5f1;
+}
+
+.head_container{
+	background-color: #77AB44;
+	height: 100px;
+}
+
+.mturk_id{
+	width: 100%;
+	padding: 15px 10px;
+	text-align: center;
+	font-size:14px;
+	font-weight: bold;
+	color: #F3F3F3;
+}
+
+.type_container{
+	height: 38px;
+	overflow-x: auto;
+	/*white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;*/
+}
+
+.sections{
+ 	white-space: nowrap;
+    min-width: 945px;
+    height: 38px;
+}
+
+.type_container button{
+	text-align: center;
+	height: 29px;
+    padding: 14px;
+    -moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	font-weight:bold;
+	padding:6px 20px;
+	margin: 5px 2px;
+	text-decoration:none;
+
+	/*display: inline-block;*/
+
+	float: left;
+	display: flex;
+	align-items: center;
+
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+
+}
+
+.type_container::-webkit-scrollbar {
+  display: none; }
+
+
+.drawer {
+	width: 320px;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	background-color: #546b34;
+	display: table;
+    table-layout: fixed;
+    vertical-align: middle;
+}
+
+.drawer div{
+	padding: 5px 4px;
+	display: table-cell;
+	background-color: #77AB44;
+	color: #e0e0e0;
+	text-align: center;
+	font-weight:bold;
+	vertical-align: middle;
+}
+
+.drawer div:not(:last-child) {
+    border-right: 1px solid  #88ad54; 
+}
+
+.drawer div p {
+	margin: 3px 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
